@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cardview</string>
+    <string name="itching">Itching</string>
+    <string name="acidity">Acidity</string>
+    <string name="eye">eye</string>
+    <string name="nose">nose</string>
+    <string name="ear">ear</string>
+    <string name="toothache">toothache</string>
+    <string name="mouth_ulcer">mouth ulcer</string>
+    <string name="wound">Wound</string>
+    <string name="complaints_of_genital_part">complaints of genital part</string>
+    <string name="sexual_problems">sexual problems</string>
+    <string name="menstrual_problems">Menstrual problems</string>
+    <string name="submit">Submit</string>
+    <string name="pain_leg_and_hand">Pain(leg and hand)</string>
+    <string name="loose_motion">Loose motion</string>
+    <string name="abdominal_pain">Abdominal Pain</string>
+    <string name="pain">Pain</string>
+    <string name="vomiting">Vomiting</string>
+    <string name="nausea">Nausea</string>
+    <string name="headache">Headache</string>
+    <string name="cold">cold</string>
+    <string name="fever">Fever</string>
+    <string name="choose_the_category">Choose the Category</string>
+    <string name="diagnosis_details">Diagnosis details</string>
+    <string name="complain">Complain</string>
+    <string name="diagnoses_your_disease">Diagnoses your disease</string>
+    <string name="about_us">About Us</string>
+    <string name="information">Information</string>
+    <string name="payment">Payment</string>
+    <string name="user_profile">User profile</string>
+</resources>

@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".DaigonousDetails">
+
+    <LinearLayout
+        android:id="@+id/llLinearTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cure your Daigonous"
+            android:textSize="28sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/backgroundcolor"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/llLinearTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvFever"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvFever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If Fever"
+                android:textSize="22sp"
+                />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvFever"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have fever with chills/without chills choose the option"
+                    android:textSize="18dp"
+                    />
+            <RadioButton
+                android:id="@+id/rbFever"
+                android:layout_marginTop="85dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="with chills"
+                android:textSize="18sp"
+                />
+                <RadioButton
+                    android:id="@+id/rbFever2"
+                    android:layout_marginTop="85dp"
+                  android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without chills"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbFever"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDuration"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDuration"
+                    />
+                <TextView
+                    android:id="@+id/tvRashes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDuration"
+                    android:text="Do you have red patches or without rash?"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithrash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="With rash"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithoutrash"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without rash"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCold"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvCold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Cold"
+                    android:textSize="22sp"
+                    />
+               <!-- <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvCold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have fever with chills/without chills choose the option"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbFever"
+                    android:layout_marginTop="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="with chills"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbFever2"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without chills"
+                    android:textSize="18sp"
+                    />-->
+                <TextView
+                    android:id="@+id/tvDurationCold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCold"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationCold"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationCold"
+                    />
+               <!-- <TextView
+                    android:id="@+id/tvRashes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDuration"
+                    android:text="Do you have red patches or without rash?"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithrash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="With rash"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithoutrash"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without rash"
+                    android:textSize="18sp" />-->
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCough"
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvCough"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Cough"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvCough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have Cough with dry/Wet choose the option"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbCough"
+                    android:layout_marginTop="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="with Wet"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbCough2"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="With Dry"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvDurationCough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbCough"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationCough"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationCough"
+                    />
+                <TextView
+                    android:id="@+id/tvWetCough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDurationCough"
+                    android:text="If wet?"
+                    android:textSize="18dp"
+                    />
+                <LinearLayout
+                    android:layout_below="@id/tvWetCough"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWetCough"
+                    android:text="yellow"
+                    />
+                    <CheckBox
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvWetCough"
+                        android:text="Greenish"
+                        />
+                    <CheckBox
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvWetCough"
+                        android:text="white"
+                        />
+                    <CheckBox
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/tvWetCough"
+                        android:text="rusty sticky"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvHeadache"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvHeadache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Headache"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/tvHeadachechoice"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvHeadache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have Headache site of ache(right/left/front/back) choose the option"
+                    android:textSize="18dp"
+                    />
+                <LinearLayout
+                    android:layout_below="@id/tvHeadachechoice"
+                    android:id="@+id/llHeadache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/cbHeadacheRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Right"
+                    />
+                    <CheckBox
+                        android:id="@+id/cbHeadacheLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Left"
+                        />
+                    <CheckBox
+                        android:id="@+id/cbHeadacheFront"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Front"
+                        />
+                    <CheckBox
+                        android:id="@+id/cbHeadacheBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvDurationHeadache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llHeadache"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationHeadache"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationHeadache"
+                    />
+                <TextView
+                    android:id="@+id/tvHeadacheMigraine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDurationHeadache"
+                    android:text="Do you have Migraine?"
+                    android:textSize="18dp"
+                    />
+                <CheckBox
+                    android:layout_below="@id/tvHeadacheMigraine"
+                    android:id="@+id/cbMigraine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Migraine"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvNausea"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvNausea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Nausea"
+                    android:textSize="22sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDurationNausea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNausea"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationNausea"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationNausea"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvVomiting"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvVomiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Vomiting"
+                    android:textSize="22sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDurationVomiting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVomiting"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationVomiting"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationVomiting"
+                    />
+                <TextView
+                    android:id="@+id/tvDurationVomitingTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDurationVomiting"
+                    android:text="Number of Times"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationVomitingTimes"
+                    android:hint="Enter number of Times"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationVomitingTimes"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAbdominalPain"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvAbdominalPain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If AbdominalPain"
+                    android:textSize="22sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvDurationAbdominalPain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAbdominalPain"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationAbdominalPain"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationAbdominalPain"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvLooseMotion"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvLooseMotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If LooseMotion"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvLooseMotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urination choose the option"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbLooseMotionUrinationYes"
+                    android:layout_marginTop="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbLooseMotionUrinationNo"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvDurationLooseMotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbLooseMotionUrinationYes"
+                    android:text="Duration in no of days"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDurationLooseMotion"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDurationLooseMotion"
+                    />
+                <TextView
+                    android:id="@+id/tvLooseMotionTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDurationLooseMotion"
+                    android:text="Number of times do urine today?"
+                    android:textSize="18dp"
+                    />
+                <EditText
+                    android:id="@+id/etLooseMotionTimes"
+                    android:hint="enter the Times"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLooseMotionTimes"
+                    />
+                <TextView
+                    android:id="@+id/tvLooseMotionUrinationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etLooseMotionTimes"
+                    android:text="Urination Type"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvLooseMotionUrinationType"
+                    android:id="@+id/rbUrinationTypeYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yellow"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvLooseMotionUrinationType"
+                    android:id="@+id/rbUrinationTypeNo"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reddish"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tvLooseMotionUrinationBurningSensation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbUrinationTypeYes"
+                    android:text="BurningSensation"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvLooseMotionUrinationBurningSensation"
+                    android:id="@+id/rbUrinationBurningSensationYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvLooseMotionUrinationBurningSensation"
+                    android:id="@+id/rbUrinationBurningSensationNo"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="18sp" />
+              <!--  <TextView
+                    android:id="@+id/tvLooseMotionUrination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLooseMotionUrinationBurningSensation"
+                    android:text="Urination"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvLooseMotionUrination"
+                    android:id="@+id/rbUrineYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvLooseMotionUrination"
+                    android:id="@+id/rbUrineNo"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textSize="18sp" />-->
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Itching"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvItching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Itching"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/tvItchingTextArea"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvItching"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Site of Itching"
+                    android:textSize="18sp"
+                    />
+                <EditText
+                    android:layout_below="@id/tvItchingTextArea"
+                    android:id="@+id/etItchingTextArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:hint="Tell me your area of Itching"
+                    />
+                <TextView
+                    android:id="@+id/tvItchingAppearance"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/etItchingTextArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Appearance/looks"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvItchingAppearance"
+                    android:id="@+id/rbItchingAppearance"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Round circular patch"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/rbItchingAppearance"
+                    android:id="@+id/rbItchingAppearance2"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small red multiple circular patches"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvItchingIncrease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbItchingAppearance2"
+                    android:text="when Itching Increase at?"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton
+                    android:layout_below="@id/tvItchingIncrease"
+                    android:id="@+id/rbItchingIncreaseNight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Night"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/rbItchingIncreaseNight"
+                    android:id="@+id/rbItchingIncreaseDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continuous through day"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/rbItchingIncreaseDay"
+                    android:id="@+id/rbItchingIncreaseOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="while On/Off"
+                    android:textSize="18sp"/>
+                <RadioButton
+                    android:layout_below="@id/rbItchingIncreaseOnOff"
+                    android:id="@+id/rbIIIncreasesOnItching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increases on itching"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvFever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Fever"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvFever"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have fever with chills/without chills choose the option"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbFever"
+                    android:layout_marginTop="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="with chills"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbFever2"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without chills"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbFever"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDuration"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDuration"
+                    />
+                <TextView
+                    android:id="@+id/tvRashes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDuration"
+                    android:text="Do you have red patches or without rash?"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithrash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="With rash"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithoutrash"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without rash"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvFever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Fever"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvFever"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have fever with chills/without chills choose the option"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbFever"
+                    android:layout_marginTop="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="with chills"
+                    android:textSize="18sp"
+                    />
+                <RadioButton
+                    android:id="@+id/rbFever2"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without chills"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rbFever"
+                    android:text="Duration in no of days"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etDuration"
+                    android:hint="enter the Duration"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDuration"
+                    />
+                <TextView
+                    android:id="@+id/tvRashes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etDuration"
+                    android:text="Do you have red patches or without rash?"
+                    android:textSize="18dp"
+                    />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithrash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="With rash"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:layout_below="@id/tvRashes"
+                    android:id="@+id/rbwithoutrash"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Without rash"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:padding="8dp"
+    tools:context=".ComplainActivity">
+
+    <LinearLayout
+        android:id="@+id/llPanel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosis_details"
+            android:textColor="@color/backgroundcolor"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tvTitle"
+        android:layout_below="@id/llPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:text="@string/choose_the_category"
+        />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svScroll"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+
+    <LinearLayout
+        android:id="@+id/llSecondPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fever"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cold"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/headache"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/nausea"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/vomiting"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/pain"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/abdominal_pain"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/loose_motion"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/itching"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/pain_leg_and_hand"
+            android:textSize="15sp" />
+
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+                android:text="@string/acidity"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/eye"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/nose"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/ear"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/toothache"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/mouth_ulcer"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/wound"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/complaints_of_genital_part"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/sexual_problems"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/menstrual_problems"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@id/llPanel"
+        android:layout_alignRight="@id/llPanel"
+        android:layout_below="@id/llPanel"
+        >
+    <LinearLayout
+        android:id="@+id/llThirdPanel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llPanel"
+        android:orientation="vertical"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acidity"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="eye"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="nose"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="ear"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="toothache"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="mouth ulcer"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Wound"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="complaints of genital part"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="sexual problems"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Menstrual problems"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>-->
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textStyle="normal"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/svScroll"
+        />
+</RelativeLayout>
